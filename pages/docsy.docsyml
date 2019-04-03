@@ -1,0 +1,72 @@
+<heading>What is Docsy?</heading>
+<headingdesc>Yes, i know the name already exists</headingdesc>
+<ruler></ruler>
+<indent>
+    <text>Docsy {{version}} is a small framework that will help you to build structured, standard documentation pages over HTML.</text>
+</indent>
+<ruler></ruler>
+<indent>
+    <spacer1x></spacer1x>
+    <closedfold>
+        <header>Why Docsy?</header>
+        <content>
+            <indent>
+                <spacer1x></spacer1x>
+                <text>It's better than starting from scratch, that's for sure.</text>
+                <text>Now, seriously, Docsy gives a little help with the index and some pre-built components. There is little <i>learning new stuff</i> involved.</text>
+                <text>You'll end up with more time to focus on the documentation itself.</text>
+            </indent>
+        </content>
+    </closedfold>
+    <spacer2x></spacer2x>
+    <closedfold>
+        <header>Is... is it HTML?</header>
+        <content>
+            <indent>
+                <spacer1x></spacer1x>
+                <text>Yep</text>
+            </indent>
+        </content>
+    </closedfold>
+    <spacer2x></spacer2x>
+    <closedfold>
+        <header>Like, just HTML?</header>
+        <content>
+            <indent>
+                <spacer1x></spacer1x>
+                <text>Aye. There's a little set of pre-built components that are accessible through <pagelink page="docsyml">DocsyML</pagelink><note>Docsy Markup Language</note></text>
+            </indent>
+        </content>
+    </closedfold>
+    <spacer2x></spacer2x>
+    <closedfold>
+        <header>Why bother?</header>
+        <content>
+            <indent>
+                <spacer1x></spacer1x>
+                <text>You can always build Docsy pages with standard DHTML. Or a text editor. Or whatever. Nobody will stop you.</text>
+                <text>Docsy is for the ones that seek easily web-deployable documentation and don't want the hassle of handling indexes or page management.</text>
+            </indent>
+        </content>
+    </closedfold>
+    <spacer2x></spacer2x>
+    <closedfold>
+        <header>Are the pages themeable?</header>
+        <content>
+            <indent>
+                <spacer1x></spacer1x>
+                <text>Sure. It's CSS at the end of the day. Just edit the built-in override style sheet.</text>
+            </indent>
+        </content>
+    </closedfold>
+    <spacer2x></spacer2x>
+    <closedfold>
+        <header>Why not markdown?</header>
+        <content>
+            <indent>
+                <spacer1x></spacer1x>
+                <text>Get out.</text>
+            </indent>
+        </content>
+    </closedfold>
+</indent>

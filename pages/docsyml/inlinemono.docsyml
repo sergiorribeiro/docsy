@@ -1,0 +1,16 @@
+<heading>inlinemono</heading>
+<ruler></ruler>
+<src-xml>&lt;inlinemono&gt;Lorem ipsum dolor sit amet&lt;/inlinemono&gt;</src-xml>
+<ruler></ruler>
+<indent>
+    <text><b>inlinemono</b> tag will produce inlined monospaced blocks</text>
+    <spacer2x></spacer2x>
+    <spacer2x></spacer2x>
+    <group>
+        <header>Example</header>
+        <content>
+            <spacer2x></spacer2x>
+            <text>Lorem ipsum dolor sit amet <inlinemono>Lorem ipsum dolor sit amet</inlinemono> Lorem ipsum dolor sit amet</text>
+        </content>
+    </group>
+</indent>

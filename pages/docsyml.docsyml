@@ -1,0 +1,8 @@
+<heading>What is DocsyML</heading>
+<headingdesc>Magic shortcut tags</headingdesc>
+<ruler></ruler>
+<indent>
+    <text>DocsyML is a small set of markup language tags that will translate to something else, or be styled in a certain form.</text>
+    <text>Use them and you'll end up with a uniform look</text>
+</indent>
+<ruler></ruler>

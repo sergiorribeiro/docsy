@@ -1,0 +1,22 @@
+<heading>{color}-tag</heading>
+<ruler></ruler>
+<src-xml>&lt;{color}-tag&gt;Lorem ipsum dolor sit amet &lt;/{color}-tag&gt;</src-xml>
+<ruler></ruler>
+<indent>
+    <text><b>{color}-tag</b> tag will produce a tag-alike container with the color {color}</text>
+    <spacer1x></spacer1x>
+    <text>Supported colors (yet):</text>
+    <spacer1x></spacer1x>
+    <ul>
+        <li>green</li>
+    </ul>
+    <spacer2x></spacer2x>
+    <spacer2x></spacer2x>
+    <group>
+        <header>Example</header>
+        <content>
+            <spacer2x></spacer2x>
+            <text>Lorem ipsum dolor sit amet <green-tag>Lipsum</green-tag></text>
+        </content>
+    </group>
+</indent>

@@ -1,0 +1,21 @@
+<heading>nobreak</heading>
+<ruler></ruler>
+<src-xml>&lt;nobreak&gt;&lt;/nobreak&gt;</src-xml>
+<ruler></ruler>
+<indent>
+    <text><b>nobreak</b> tag will not break whitespaces within</text>
+    <spacer2x></spacer2x>
+    <spacer2x></spacer2x>
+    <group>
+        <header>Example</header>
+        <content>
+            <spacer2x></spacer2x>
+            <div style="width:50px;border:1px solid black">
+                <text>Lorem ipsum dolor sit amet</text>
+                <nobreak>
+                    <text>Lorem ipsum dolor sit amet</text>
+                </nobreak>
+            </div>
+        </content>
+    </group>
+</indent>

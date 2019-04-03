@@ -1,0 +1,17 @@
+<heading>note</heading>
+<ruler></ruler>
+<src-xml>&lt;note&gt;Lorem ipsum dolor sit amet&lt;/note&gt;</src-xml>
+<ruler></ruler>
+<indent>
+    <text><b>note</b> tag will produce a numbered notes list at the bottom of the page, leaving inplace the corresponding numeral.</text>
+    <text>Numeric order is automatic.</text>
+    <spacer2x></spacer2x>
+    <spacer2x></spacer2x>
+    <group>
+        <header>Example</header>
+        <content>
+            <spacer2x></spacer2x>
+            <text>Lipsum<note>Lorem ipsum dolor sit amet</note> text</text>
+        </content>
+    </group>
+</indent>

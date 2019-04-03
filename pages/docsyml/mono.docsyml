@@ -1,0 +1,20 @@
+<heading>mono</heading>
+<ruler></ruler>
+<src-xml>&lt;mono&gt;Lorem ipsum dolor sit amet&lt;/mono&gt;</src-xml>
+<ruler></ruler>
+<indent>
+    <text><b>mono</b> tag will produce monospaced blocks</text>
+    <spacer2x></spacer2x>
+    <spacer2x></spacer2x>
+    <group>
+        <header>Example</header>
+        <content>
+            <spacer2x></spacer2x>
+            <text>Lorem ipsum dolor sit amet</text>
+            <spacer1x></spacer1x>
+            <mono>Lorem ipsum dolor sit amet</mono>
+            <spacer1x></spacer1x>
+            <text>Lorem ipsum dolor sit amet</text>
+        </content>
+    </group>
+</indent>

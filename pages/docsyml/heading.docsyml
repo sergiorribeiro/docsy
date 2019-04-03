@@ -1,0 +1,16 @@
+<heading>heading</heading>
+<ruler></ruler>
+<src-xml>&lt;heading&gt;Lorem ipsum dolor sit amet&lt;/heading&gt;</src-xml>
+<ruler></ruler>
+<indent>
+    <text><b>heading</b> tag will produce a title</text>
+    <spacer2x></spacer2x>
+    <spacer2x></spacer2x>
+    <group>
+        <header>Example</header>
+        <content>
+            <spacer2x></spacer2x>
+            <heading>Lorem ipsum dolor sit amet</heading>
+        </content>
+    </group>
+</indent>

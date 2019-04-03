@@ -1,0 +1,19 @@
+<heading>indent</heading>
+<ruler></ruler>
+<src-xml>&lt;indent&gt;&lt;/indent&gt;</src-xml>
+<ruler></ruler>
+<indent>
+    <text><b>indent</b> tag will indent DocsyML within</text>
+    <spacer2x></spacer2x>
+    <spacer2x></spacer2x>
+    <group>
+        <header>Example</header>
+        <content>
+            <spacer2x></spacer2x>
+            <text>Lorem ipsum dolor sit amet</text>
+            <indent>
+                <text>Lorem ipsum dolor sit amet</text>
+            </indent>
+        </content>
+    </group>
+</indent>

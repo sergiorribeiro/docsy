@@ -1,0 +1,18 @@
+<heading>spacer2x</heading>
+<ruler></ruler>
+<src-xml>&lt;spacer2x&gt;&lt;/spacer2x&gt;</src-xml>
+<ruler></ruler>
+<indent>
+    <text><b>spacer2x</b> tag will stack two <pagelink page="docsyml/spacer1x">&lt;spacer1x&gt;</pagelink> at once</text>
+    <spacer2x></spacer2x>
+    <spacer2x></spacer2x>
+    <group>
+        <header>Example</header>
+        <content>
+            <spacer2x></spacer2x>
+            <text>Lorem ipsum dolor sit amet</text>
+            <spacer2x></spacer2x>
+            <text>Lorem ipsum dolor sit amet</text>
+        </content>
+    </group>
+</indent>

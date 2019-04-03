@@ -1,0 +1,16 @@
+<heading>subheading</heading>
+<ruler></ruler>
+<src-xml>&lt;subheading&gt;Lorem ipsum dolor sit amet&lt;/subheading&gt;</src-xml>
+<ruler></ruler>
+<indent>
+    <text><b>subheading</b> tag will produce a smaller title</text>
+    <spacer2x></spacer2x>
+    <spacer2x></spacer2x>
+    <group>
+        <header>Example</header>
+        <content>
+            <spacer2x></spacer2x>
+            <subheading>Lorem ipsum dolor sit amet</subheading>
+        </content>
+    </group>
+</indent>

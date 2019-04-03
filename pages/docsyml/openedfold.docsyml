@@ -1,0 +1,24 @@
+<heading>openedfold</heading>
+<ruler></ruler>
+<src-xml>&lt;openedfold&gt;
+    &lt;header&gt;Lorem ipsum dolor sit amet&lt;/header&gt;
+    &lt;content&gt;Lorem ipsum dolor sit amet&lt;/content&gt;
+&lt;/openedfold&gt;</src-xml>
+<ruler></ruler>
+<indent>
+    <text><b>openedfold</b> tag will produce a collapsable group, opened by default.</text>
+    <text><b>header</b> tag will be displayed as the header.</text>
+    <text><b>content</b> tag will render DocsyML normally.</text>
+    <spacer2x></spacer2x>
+    <spacer2x></spacer2x>
+    <group>
+        <header>Example</header>
+        <content>
+            <spacer2x></spacer2x>
+            <openedfold>
+                <header>Lorem ipsum dolor sit amet</header>
+                <content>Lorem ipsum dolor sit amet</content>
+            </openedfold>
+        </content>
+    </group>
+</indent>

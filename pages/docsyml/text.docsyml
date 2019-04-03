@@ -1,0 +1,16 @@
+<heading>text</heading>
+<ruler></ruler>
+<src-xml>&lt;text&gt;Lorem ipsum dolor sit amet&lt;/text&gt;</src-xml>
+<ruler></ruler>
+<indent>
+    <text><b>text</b> tag will produce a text block</text>
+    <spacer2x></spacer2x>
+    <spacer2x></spacer2x>
+    <group>
+        <header>Example</header>
+        <content>
+            <spacer2x></spacer2x>
+            <text>Lorem ipsum dolor sit amet</text>
+        </content>
+    </group>
+</indent>

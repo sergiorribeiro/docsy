@@ -1,0 +1,16 @@
+<heading>headingdesc</heading>
+<ruler></ruler>
+<src-xml>&lt;headingdesc&gt;Lorem ipsum dolor sit amet&lt;/headingdesc&gt;</src-xml>
+<ruler></ruler>
+<indent>
+    <text><b>headingdesc</b> tag will produce a small caption</text>
+    <spacer2x></spacer2x>
+    <spacer2x></spacer2x>
+    <group>
+        <header>Example</header>
+        <content>
+            <spacer2x></spacer2x>
+            <headingdesc>Lorem ipsum dolor sit amet</headingdesc>
+        </content>
+    </group>
+</indent>

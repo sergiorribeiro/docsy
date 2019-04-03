@@ -1,0 +1,16 @@
+<heading>information</heading>
+<ruler></ruler>
+<src-xml>&lt;information&gt;Lorem ipsum dolor sit amet&lt;/information&gt;</src-xml>
+<ruler></ruler>
+<indent>
+    <text><b>information</b> tag will produce a visual disruptive information, with a information theme.</text>
+    <spacer2x></spacer2x>
+    <spacer2x></spacer2x>
+    <group>
+        <header>Example</header>
+        <content>
+            <spacer2x></spacer2x>
+            <information>Lorem ipsum dolor sit amet</information>
+        </content>
+    </group>
+</indent>

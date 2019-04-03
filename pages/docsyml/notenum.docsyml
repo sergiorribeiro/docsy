@@ -1,0 +1,17 @@
+<heading>notenum</heading>
+<ruler></ruler>
+<src-xml>&lt;notenum&gt;Lorem ipsum dolor sit amet&lt;/notenum&gt;</src-xml>
+<ruler></ruler>
+<indent>
+    <text><b>notenum</b> tag intent is to point to a specific note number without creating new lines.</text>
+    <text>It's just a superscript style, really</text>
+    <spacer2x></spacer2x>
+    <spacer2x></spacer2x>
+    <group>
+        <header>Example</header>
+        <content>
+            <spacer2x></spacer2x>
+            <text>Lipsum<notenum>1</notenum> text</text>
+        </content>
+    </group>
+</indent>

@@ -1,0 +1,17 @@
+<heading>pagelink</heading>
+<ruler></ruler>
+<src-xml>&lt;pagelink page="docsyml/pagelink"&gt;Lorem ipsum dolor sit amet&lt;/pagelink&gt;</src-xml>
+<ruler></ruler>
+<indent>
+    <text><b>pagelink</b> tag will produce a link to another page.</text>
+    <text><b>page</b> attribute set the page target, starting at <b>pages/</b> excluding extension</text>
+    <spacer2x></spacer2x>
+    <spacer2x></spacer2x>
+    <group>
+        <header>Example</header>
+        <content>
+            <spacer2x></spacer2x>
+            <pagelink page="docsyml/pagelink">Linking to myself</pagelink>
+        </content>
+    </group>
+</indent>

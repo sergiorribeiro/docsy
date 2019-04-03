@@ -1,0 +1,16 @@
+<heading>alert</heading>
+<ruler></ruler>
+<src-xml>&lt;alert&gt;Lorem ipsum dolor sit amet&lt;/alert&gt;</src-xml>
+<ruler></ruler>
+<indent>
+    <text><b>alert</b> tag will produce a visual disruptive information, with an alert theme.</text>
+    <spacer2x></spacer2x>
+    <spacer2x></spacer2x>
+    <group>
+        <header>Example</header>
+        <content>
+            <spacer2x></spacer2x>
+            <alert>Lorem ipsum dolor sit amet</alert>
+        </content>
+    </group>
+</indent>

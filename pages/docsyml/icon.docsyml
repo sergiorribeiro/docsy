@@ -1,0 +1,17 @@
+<heading>icon-{name}</heading>
+<ruler></ruler>
+<src-xml>&lt;icon-{name}&gt;&lt;/icon-{name}&gt;</src-xml>
+<ruler></ruler>
+<indent>
+    <text><b>icon-{name}</b> tag will produce a <a href="https://fontawesome.com/icons?d=gallery&s=solid&m=free" target="_blank">FontAwesome Solid Icon, from the free gallery</a></text>
+    <text>Just replace {name} with the icon name, and voilá</text>
+    <spacer2x></spacer2x>
+    <spacer2x></spacer2x>
+    <group>
+        <header>Example</header>
+        <content>
+            <spacer2x></spacer2x>
+            <icon-briefcase-medical></icon-briefcase-medical>
+        </content>
+    </group>
+</indent>

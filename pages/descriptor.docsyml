@@ -1,0 +1,113 @@
+<heading>Docsy descriptor</heading>
+<headingdesc>How to index your stuff?</headingdesc>
+<ruler></ruler>
+<indent>
+    <text>Docsy descriptor will describe (duh) how your pages should be organized.</text>
+    <text>It's nothing but JSON structured file, with the following expected objects/arrays:</text>
+    <spacer2x></spacer2x>
+    <openedfold>
+        <header>configs (object)</header>
+        <content>
+            <static-zebra-table>
+                <row>
+                    <hcol>Config</hcol>
+                    <hcol>Description</hcol>
+                </row>
+                <row>
+                    <dcol>debugMode</dcol>
+                    <dcol>Boolean. Determines if the pages should be loaded on debug mode or not</dcol>
+                </row>
+                <row>
+                    <dcol>indexWidth</dcol>
+                    <dcol>Integer. Determines the index width percentage, on start</dcol>
+                </row>
+            </static-zebra-table>
+        </content>
+    </openedfold>
+    <spacer2x></spacer2x>
+    <openedfold>
+        <header>constants (object)</header>
+        <content>
+            <spacer1x></spacer1x>
+            <text>Constants are page-wide user set variables that will be replaced on the pages, where whithin double brackets.</text>
+            <text>&#123;&#123;varname&#125;&#125; will be replaced with the member with the same name on this object.</text>
+            <text>If there are no matches, it will remain untouched.</text>
+        </content>
+    </openedfold>
+    <spacer2x></spacer2x>
+    <openedfold>
+        <header>pages (array of object)</header>
+        <content>
+            <spacer1x></spacer1x>
+            <static-zebra-table>
+                <row>
+                    <hcol>Property</hcol>
+                    <hcol>Description</hcol>
+                </row>
+                <row>
+                    <dcol>title</dcol>
+                    <dcol>Label to display on the index</dcol>
+                </row>
+                <row>
+                    <dcol>page</dcol>
+                    <dcol>Page path, from <b>/pages</b> forth, without extension</dcol>
+                </row>
+                <row>
+                    <dcol>children</dcol>
+                    <dcol>Array of object. Repeat this same structure to add depth levels</dcol>
+                </row>
+            </static-zebra-table>
+        </content>
+    </openedfold>
+    <spacer2x></spacer2x>
+    <text>Here is an example, for this documentation (as it was at this time):</text>
+    <src-json>{
+  "configs" : {
+    "debugMode": false,
+    "indexWidth": 20
+  },
+  "constants": {
+    "version": "1.0.4a"
+  },
+  "pages":[
+    {
+      "title":"Docsy",
+      "page":"docsy"
+    },
+    {
+      "title":"DocsyML",
+      "page":"docsyml",
+      "children" : [
+        {"title":"heading", "page":"docsyml/heading"},
+        {"title":"subheading", "page":"docsyml/subheading"},
+        {"title":"headingdesc", "page":"docsyml/headingdesc"},
+        {"title":"spacer1x", "page":"docsyml/spacer1x"},
+        {"title":"spacer2x", "page":"docsyml/spacer2x"},
+        {"title":"text", "page":"docsyml/text"},
+        {"title":"ruler", "page":"docsyml/ruler"},
+        {"title":"openedfold", "page":"docsyml/openedfold"},
+        {"title":"closedfold", "page":"docsyml/closedfold"},
+        {"title":"group", "page":"docsyml/group"},
+        {"title":"note", "page":"docsyml/note"},
+        {"title":"notenum", "page":"docsyml/notenum"},
+        {"title":"pagelink", "page":"docsyml/pagelink"},
+        {"title":"table", "page":"docsyml/table"},
+        {"title":"warning", "page":"docsyml/warning"},
+        {"title":"alert", "page":"docsyml/alert"},
+        {"title":"information", "page":"docsyml/information"},
+        {"title":"mono", "page":"docsyml/mono"},
+        {"title":"inlinemono", "page":"docsyml/inlinemono"},
+        {"title":"indent", "page":"docsyml/indent"},
+        {"title":"nobreak", "page":"docsyml/nobreak"},
+        {"title":"tag", "page":"docsyml/colortag"},
+        {"title":"color", "page":"docsyml/color"},
+        {"title":"src", "page":"docsyml/src"}
+      ]
+    },
+    {
+      "title":"Descriptor",
+      "page":"descriptor"
+    }
+  ]
+}</src-json>
+</indent>

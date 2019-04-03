@@ -1,0 +1,26 @@
+<heading>block</heading>
+<ruler></ruler>
+<src-xml>&lt;block name="blockname"&gt;&lt;/block&gt;</src-xml>
+<ruler></ruler>
+<indent>
+    <text><b>block</b> tag will inject the target block on the calling DocsyML.</text>
+    <text><b>name</b> attribute set the block target, starting at <b>blocks/</b> excluding extension</text>
+    <text>Blocks can be called within blocks.</text>
+    <spacer2x></spacer2x>
+    <spacer2x></spacer2x>
+    <group>
+        <header>Example</header>
+        <content>
+            <spacer2x></spacer2x>
+            <text>The following 5 text lines were only written once:</text>
+            <indent>
+                <spacer1x></spacer1x>
+                <block name="example-block"></block>
+                <block name="example-block"></block>
+                <block name="example-block"></block>
+                <block name="example-block"></block>
+                <block name="example-block"></block>
+            </indent>
+        </content>
+    </group>
+</indent>

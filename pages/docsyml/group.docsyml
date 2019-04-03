@@ -1,0 +1,24 @@
+<heading>group</heading>
+<ruler></ruler>
+<src-xml>&lt;group&gt;
+    &lt;header&gt;Lorem ipsum dolor sit amet&lt;/header&gt;
+    &lt;content&gt;Lorem ipsum dolor sit amet&lt;/content&gt;
+&lt;/group&gt;</src-xml>
+<ruler></ruler>
+<indent>
+    <text><b>group</b> tag will produce a fixed group.</text>
+    <text><b>header</b> tag will be displayed as the header.</text>
+    <text><b>content</b> tag will render DocsyML normally.</text>
+    <spacer2x></spacer2x>
+    <spacer2x></spacer2x>
+    <group>
+        <header>Example</header>
+        <content>
+            <spacer2x></spacer2x>
+            <group>
+                <header>Lorem ipsum dolor sit amet</header>
+                <content>Lorem ipsum dolor sit amet</content>
+            </group>
+        </content>
+    </group>
+</indent>

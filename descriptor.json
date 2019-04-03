@@ -1,0 +1,51 @@
+{
+  "configs" : {
+    "debugMode": false,
+    "indexWidth": 20
+  },
+  "constants": {
+    "version": "1.0.4a"
+  },
+  "pages":[
+    {
+      "title":"Docsy",
+      "page":"docsy"
+    },
+    {
+      "title":"DocsyML",
+      "page":"docsyml",
+      "children" : [
+        {"title":"heading", "page":"docsyml/heading"},
+        {"title":"subheading", "page":"docsyml/subheading"},
+        {"title":"headingdesc", "page":"docsyml/headingdesc"},
+        {"title":"spacer1x", "page":"docsyml/spacer1x"},
+        {"title":"spacer2x", "page":"docsyml/spacer2x"},
+        {"title":"text", "page":"docsyml/text"},
+        {"title":"ruler", "page":"docsyml/ruler"},
+        {"title":"openedfold", "page":"docsyml/openedfold"},
+        {"title":"closedfold", "page":"docsyml/closedfold"},
+        {"title":"group", "page":"docsyml/group"},
+        {"title":"note", "page":"docsyml/note"},
+        {"title":"notenum", "page":"docsyml/notenum"},
+        {"title":"pagelink", "page":"docsyml/pagelink"},
+        {"title":"table", "page":"docsyml/table"},
+        {"title":"warning", "page":"docsyml/warning"},
+        {"title":"alert", "page":"docsyml/alert"},
+        {"title":"information", "page":"docsyml/information"},
+        {"title":"mono", "page":"docsyml/mono"},
+        {"title":"inlinemono", "page":"docsyml/inlinemono"},
+        {"title":"indent", "page":"docsyml/indent"},
+        {"title":"nobreak", "page":"docsyml/nobreak"},
+        {"title":"tag", "page":"docsyml/colortag"},
+        {"title":"color", "page":"docsyml/color"},
+        {"title":"src", "page":"docsyml/src"},
+        {"title":"block", "page":"docsyml/block"},
+        {"title":"icon", "page":"docsyml/icon"}
+      ]
+    },
+    {
+      "title":"Descriptor",
+      "page":"descriptor"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+<heading>{type}-table</heading>
+<ruler></ruler>
+<src-xml>&lt;{type}-table&gt;
+    &lt;row&gt;
+        &lt;hcol&gt;&lt;hcol&gt;
+    &lt;/row&gt;
+    &lt;row&gt;
+        &lt;dcol&gt;&lt;dcol&gt;
+    &lt;/row&gt;
+&lt;/{type}-table&gt;</src-xml>
+<ruler></ruler>
+<indent>
+    <text><b>{type}-table</b> tag will produce a table with the type {type}</text>
+    <spacer1x></spacer1x>
+    <text>Supported types (yet):</text>
+    <spacer1x></spacer1x>
+    <ul>
+        <li>static-zebra</li>
+        <li>zebra</li>
+        <li>clear</li>
+    </ul>
+    <spacer2x></spacer2x>
+    <spacer2x></spacer2x>
+    <group>
+        <header>Examples</header>
+        <content>
+            <spacer2x></spacer2x>
+            <static-zebra-table>
+                <row>
+                    <hcol>Some column header</hcol>
+                    <hcol>Some column header</hcol>
+                </row>
+                <row>
+                    <dcol>static-zebra type</dcol>
+                    <dcol>static-zebra type</dcol>
+                </row>
+                <row>
+                    <dcol>static-zebra type</dcol>
+                    <dcol>static-zebra type</dcol>
+                </row>
+            </static-zebra-table>
+            <spacer2x></spacer2x>
+            <zebra-table>
+                <row>
+                    <hcol>Some column header</hcol>
+                    <hcol>Some column header</hcol>
+                </row>
+                <row>
+                    <dcol>zebra type</dcol>
+                    <dcol>zebra type</dcol>
+                </row>
+                <row>
+                    <dcol>zebra type</dcol>
+                    <dcol>zebra type</dcol>
+                </row>
+            </zebra-table>
+            <spacer2x></spacer2x>
+            <clear-table>
+                <row>
+                    <hcol>Some column header</hcol>
+                    <hcol>Some column header</hcol>
+                </row>
+                <row>
+                    <dcol>clear type</dcol>
+                    <dcol>clear type</dcol>
+                </row>
+                <row>
+                    <dcol>clear type</dcol>
+                    <dcol>clear type</dcol>
+                </row>
+            </clear-table>
+        </content>
+    </group>
+</indent>

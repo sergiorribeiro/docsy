@@ -1,0 +1,24 @@
+<heading>closedfold</heading>
+<ruler></ruler>
+<src-xml>&lt;closedfold&gt;
+    &lt;header&gt;Lorem ipsum dolor sit amet&lt;/header&gt;
+    &lt;content&gt;Lorem ipsum dolor sit amet&lt;/content&gt;
+&lt;/closedfold&gt;</src-xml>
+<ruler></ruler>
+<indent>
+    <text><b>closedfold</b> tag will produce a collapsable group, closed by default.</text>
+    <text><b>header</b> tag will be displayed as the header.</text>
+    <text><b>content</b> tag will render DocsyML normally.</text>
+    <spacer2x></spacer2x>
+    <spacer2x></spacer2x>
+    <group>
+        <header>Example</header>
+        <content>
+            <spacer2x></spacer2x>
+            <closedfold>
+                <header>Lorem ipsum dolor sit amet</header>
+                <content>Lorem ipsum dolor sit amet</content>
+            </closedfold>
+        </content>
+    </group>
+</indent>

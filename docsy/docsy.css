@@ -1,0 +1,387 @@
+body {
+    font-family: "Arial";
+    font-size: 14px;
+}
+
+pre[class*="language-"] {
+    margin: 0;
+}
+
+#index {
+    overflow: auto;
+}
+
+#index .node {
+    border-left: 1px dashed rgba(0,0,0,.3);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    user-select: none;
+}
+
+#index .node.root {
+    border-left: none;
+}
+
+#index .node .childrencontainer[data-state='closed']{
+    display: none;
+}
+
+#index .node .childrencontainer[data-state='opened']{
+    display: block;
+}
+
+#index .node .childrencontainer {
+    margin-left: 12px;
+}
+
+#index .node .wrapper{
+    display: flex;
+}
+
+#index .node .tick{
+    width: 15px;
+    height: 15px;
+    background-image: url('tri.svg');
+    background-size: 70% 70%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transform: rotate(90deg);
+    transition: transform 100ms ease-out;
+    cursor: pointer;
+    margin-right: 5px;
+    margin-left: 5px;
+    opacity:0.5;
+}
+
+#index .node .text{
+    cursor: pointer;
+}
+
+#index .node .tick.-nochildren {
+    pointer-events: none;
+    visibility: hidden;
+}
+
+#pagemarkup {
+    display: none;
+}
+
+#splitview {
+    display: flex;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+
+#splitter {
+    width: 2px;
+    background-color: rgba(0,0,0,.5);
+    cursor: w-resize;
+}
+
+#pagestage {
+    padding: 20px;
+    overflow: auto;
+}
+
+#pagestage heading {
+    font-size: 2em;
+    display: block;
+}
+
+#pagestage subheading {
+    font-size: 1.2em;
+    display: block;
+}
+
+#pagestage headingdesc {
+    font-size: 0.85em;
+    display: block;
+}
+
+#pagestage spacer1x {
+    height: 10px;
+    display: block;
+}
+
+#pagestage spacer2x {
+    height: 20px;
+    display: block;
+}
+
+#pagestage text {
+    display: block;
+    font-size: 1em;
+}
+
+#pagestage ruler {
+    display: block;
+    border-bottom: 1px solid rgba(0,0,0,.25);
+    box-shadow: 0px 0px 1px 0px rgba(0,0,0,.1);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#pagestage openedfold,
+#pagestage closedfold,
+#pagestage group {
+    display: block;
+}
+
+#pagestage openedfold header,
+#pagestage closedfold header,
+#pagestage group header {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(0,0,0,.3);
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-size: 1.25em;
+    user-select: none;
+}
+
+#pagestage group header {
+    cursor: default;
+}
+
+#pagestage openedfold header:after,
+#pagestage closedfold header:after {
+    display: block;
+    position: absolute;
+    content: "(expand)";
+    right: 0px;
+    top: 0px;
+    font-size: 0.8em;
+    opacity: 0.5;
+    top:50%;
+    transform: translateY(-50%);
+}
+
+#pagestage openedfold[state='opened'] header:after,
+#pagestage closedfold[state='opened'] header:after {
+    content: "(retract)";
+}
+
+#pagestage openedfold[state='closed'] header:after,
+#pagestage closedfold[state='closed'] header:after {
+    content: "(expand)";
+}
+
+#pagestage openedfold > content,
+#pagestage closedfold > content {
+    display: block;
+    transform-origin: 50% 0%;
+    transform: scaleY(0);
+    height: 0px;
+    border-top: none;
+}
+
+#pagestage openedfold > content.-opened,
+#pagestage closedfold > content.-opened,
+#pagestage group > content {
+    display: block;
+    transform: scaleY(1);
+    height: auto;
+}
+
+#pagestage note,
+#pagestage notenum {
+    vertical-align: super;
+    font-size: 0.65em;
+    display: inline;
+}
+
+#pagestage annotations {
+    display: block;
+    border-top: 1px solid rgba(0,0,0,.3);
+    margin-top: 30px;
+    padding-top: 10px;
+}
+
+#pagestage annotations notedesc {
+    display: flex;
+    font-size: 0.8em;
+}
+
+#pagestage annotations notedesc number {
+    margin-right: 4px;
+    font-weight: bold;
+}
+
+#pagestage pagelink {
+    display: inline-block;
+    text-decoration: underline;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#pagestage table.zebra,
+#pagestage table.static-zebra {
+    border-collapse: collapse;
+    border: 1px solid rgba(0,0,0,.4);
+    width: 100%;
+}
+
+#pagestage table.zebra th,
+#pagestage table.zebra td,
+#pagestage table.static-zebra th,
+#pagestage table.static-zebra td {
+    padding: 8px;
+    vertical-align: middle;
+    text-align: left;
+    background-color: rgba(0,0,0,.1);
+    border: 1px solid rgba(0,0,0,.4);
+}
+
+#pagestage table.zebra th,
+#pagestage table.static-zebra th {
+    background-color: rgba(0,0,0,.3);
+}
+
+#pagestage table.zebra tr:nth-child(odd) td,
+#pagestage table.static-zebra tr:nth-child(odd) td {
+    background-color: rgba(0,0,0,.05);
+}
+
+#pagestage table.zebra tr:hover td {
+    background-color: rgba(0,0,0,.15);
+}
+
+#pagestage warning,
+#pagestage alert,
+#pagestage information {
+    display: block;
+    padding: 15px;
+    border: 1px solid transparent;
+}
+
+#pagestage warning{
+    color: #856404;
+    background-color: #fff3cd;
+    border-color: #ffeeba;
+}
+
+#pagestage alert{
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+#pagestage information {
+    color: #383d41;
+    background-color: #e2e3e5;
+    border-color: #d6d8db;
+}
+
+#pagestage genversion {
+    display: block;
+    text-align: right;
+    font-size: 8px;
+    color: rgba(0,0,0,.3);
+    margin-top: 30px;
+}
+
+#pagestage genversion .-reload {
+    cursor: pointer;
+    display: inline-block;
+}
+
+#pagestage mono {
+    display: block;
+    font-family: monospace;
+    padding: 3px;
+    border: 1px solid rgba(0,0,0,.4);
+    background-color: rgba(0,0,0,.01);
+    unicode-bidi: embed;
+    white-space: pre;
+}
+
+#pagestage inlinemono {
+    display: inline-block;
+    font-family: monospace;
+    padding: 3px;
+    border: 1px solid rgba(0,0,0,.4);
+    background-color: rgba(0,0,0,.01);
+    unicode-bidi: embed;
+    white-space: pre;
+}
+
+#pagestage indent {
+    display: block;
+    padding-left: 15px;
+}
+
+#pagestage nobreak {
+    display: inline;
+    white-space: nowrap;
+}
+
+#pagestage green-tag {
+    display: inline-block;
+    padding: 4px;
+    margin-right: 3px;
+}
+
+#pagestage green-tag {
+    color: #046404;
+    background-color: #cdf3cd;
+    border-color: #baeeba;
+}
+
+#pagestage missingblock {
+    display: block;
+    padding: 15px;
+    border: 3px dashed #f5c6cb;
+    color: #721c24;
+    background-color: #f8d7da;
+    font-weight: bold;
+    text-align: center;
+}
+
+#pagestage missingblock span {
+    font-weight: normal;
+}
+
+#pagestage.debugging indent,
+#pagestage.debugging spacer1x,
+#pagestage.debugging spacer2x,
+#pagestage.debugging text,
+#pagestage.debugging heading,
+#pagestage.debugging subheading,
+#pagestage.debugging headingdesc,
+#pagestage.debugging openedfold,
+#pagestage.debugging closedfold {
+    border: 2px dashed red;
+    position: relative;
+}
+
+#pagestage.debugging indent:after,
+#pagestage.debugging spacer1x:after,
+#pagestage.debugging spacer2x:after,
+#pagestage.debugging openedfold:after,
+#pagestage.debugging closedfold:after {
+    position:absolute;
+    right: 0px;
+    padding: 2px;
+    color: red;
+    content: "spacer";
+    top: 0px;
+    font-size: 8px;
+}
+
+#pagestage.debugging indent:after {
+    left: 12px;
+    content: "spacer";
+    top: 2px;
+    transform: rotate(90deg);
+    transform-origin: 0 0;
+}
+
+#pagestage.debugging indent:after {content: "indent";}
+#pagestage.debugging spacer1x:after {content: "spacer1x";}
+#pagestage.debugging spacer2x:after {content: "spacer2x";}
+#pagestage.debugging openedfold:after {content: "fold";}
+#pagestage.debugging closedfold:after {content: "fold";}

@@ -1,0 +1,18 @@
+<heading>spacer1x</heading>
+<ruler></ruler>
+<src-xml>&lt;spacer1x&gt;&lt;/spacer1x&gt;</src-xml>
+<ruler></ruler>
+<indent>
+    <text><b>spacer1x</b> tag will produce an invisible vertical gap</text>
+    <spacer2x></spacer2x>
+    <spacer2x></spacer2x>
+    <group>
+        <header>Example</header>
+        <content>
+            <spacer2x></spacer2x>
+            <text>Lorem ipsum dolor sit amet</text>
+            <spacer1x></spacer1x>
+            <text>Lorem ipsum dolor sit amet</text>
+        </content>
+    </group>
+</indent>

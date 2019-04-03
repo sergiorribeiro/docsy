@@ -1,0 +1,25 @@
+<heading>src-{language}</heading>
+<ruler></ruler>
+<src-xml>&lt;src-{language}&gt;let a = 1;&lt;/src-{language}&gt;</src-xml>
+<ruler></ruler>
+<indent>
+    <text><b>src-{language}</b> tag will produce an highlighted {language} source code block, powered by Prism.js</text>
+    <spacer1x></spacer1x>
+    <text>Supported languages (yet):</text>
+    <spacer1x></spacer1x>
+    <ul>
+        <li>javascript</li>
+        <li>csharp</li>
+        <li>json</li>
+        <li>xml</li>
+    </ul>
+    <spacer2x></spacer2x>
+    <spacer2x></spacer2x>
+    <group>
+        <header>Example</header>
+        <content>
+            <spacer2x></spacer2x>
+            <src-javascript>let a = 1</src-javascript>
+        </content>
+    </group>
+</indent>

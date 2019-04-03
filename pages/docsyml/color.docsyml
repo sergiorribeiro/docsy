@@ -1,0 +1,27 @@
+<heading>color</heading>
+<ruler></ruler>
+<src-xml>&lt;color hex="ffaa00"&gt;Lorem ipsum dolor sit amet&lt;/color&gt;</src-xml>
+<ruler></ruler>
+<indent>
+    <text><b>color</b> tag will apply forecolor.</text>
+    <text><b>hex</b> attribute will set the forecolor hex value.</text>
+    <spacer1x></spacer1x>
+    <text>Supported colors:</text>
+    <spacer1x></spacer1x>
+    <ul>
+        <li>green</li>
+    </ul>
+    <spacer2x></spacer2x>
+    <spacer2x></spacer2x>
+    <group>
+        <header>Example</header>
+        <content>
+            <spacer2x></spacer2x>
+                <text>
+                    <color hex="ffaa00">Lorem ipsum </color>
+                    <color hex="ffaaff">dolor sit amet</color>
+                </text>
+            </color>
+        </content>
+    </group>
+</indent>

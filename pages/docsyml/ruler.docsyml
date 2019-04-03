@@ -1,0 +1,16 @@
+<heading>ruler</heading>
+<ruler></ruler>
+<src-xml>&lt;ruler&gt;&lt;/ruler&gt;</src-xml>
+<ruler></ruler>
+<indent>
+    <text><b>ruler</b> tag will produce an horizontal separator</text>
+    <spacer2x></spacer2x>
+    <spacer2x></spacer2x>
+    <group>
+        <header>Example</header>
+        <content>
+            <spacer2x></spacer2x>
+            <ruler></ruler>
+        </content>
+    </group>
+</indent>

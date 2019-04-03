@@ -1,0 +1,16 @@
+<heading>warning</heading>
+<ruler></ruler>
+<src-xml>&lt;warning&gt;Lorem ipsum dolor sit amet&lt;/warning&gt;</src-xml>
+<ruler></ruler>
+<indent>
+    <text><b>warning</b> tag will produce a visual disruptive information, with a warning theme.</text>
+    <spacer2x></spacer2x>
+    <spacer2x></spacer2x>
+    <group>
+        <header>Example</header>
+        <content>
+            <spacer2x></spacer2x>
+            <warning>Lorem ipsum dolor sit amet</warning>
+        </content>
+    </group>
+</indent>
